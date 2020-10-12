@@ -15,9 +15,14 @@
  */
 package io.mykit.ddns.core;
 
+import io.mykit.ddns.bean.DomainInfo;
 import io.mykit.ddns.pool.ScheduledThreadPool;
+import io.mykit.ddns.task.BatchScheduleTask;
 import io.mykit.ddns.task.ScheduledTask;
+import io.mykit.ddns.utils.common.ObjectUtils;
+import io.mykit.ddns.utils.prop.ParseUtils;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -28,6 +33,9 @@ import java.util.concurrent.TimeUnit;
 public class Main {
 
     public static void main(String[] args){
+        if (ObjectUtils.isEmpty(args)){
+            throw new IllegalArgumentException("No args, you need run the process like: 【java -jar mykit-ddns.jar /home/domains.properties】");
+        }
         //注册钩子函数
         Runtime.getRuntime().addShutdownHook(new Thread(new Runnable() {
             @Override
@@ -35,8 +43,9 @@ public class Main {
                 ScheduledThreadPool.shutdown();
             }
         }));
+        List<DomainInfo> list = ParseUtils.parsePropData2DomainInfoList(args[0]);
         //调用定时任务
-        ScheduledTask task = new ScheduledTask("xxx.com", new String[]{"test"});
+        BatchScheduleTask task = new BatchScheduleTask(list);
         ScheduledThreadPool.schedule(task, 0, 15, TimeUnit.MINUTES);
     }
 }

@@ -31,4 +31,14 @@ public class ObjectUtils {
     public static boolean isEmpty(String ... str){
         return str == null || str.length <= 0;
     }
+
+    public static boolean isEmpty(String str){
+        return str == null || str.trim().isEmpty();
+    }
+
+    public static String[] splitString(String str, String split){
+        if (isEmpty(str)) return new String[0];
+        if (!str.contains(split)) return new String[]{str};
+        return str.split(split);
+    }
 }

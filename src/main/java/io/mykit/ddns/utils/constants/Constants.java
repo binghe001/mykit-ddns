@@ -25,11 +25,11 @@ public class Constants {
     /**
      * 阿里云ACCESS_KEY_ID
      */
-    public static final String ACCESS_KEY_ID = "XXXXXXX";
+    public static final String ACCESS_KEY_ID = "XXXXXXXXX";
     /**
      * 阿里云ACCESS_KEY_SECRET
      */
-    public static final String ACCESS_KEY_SECRET = "XXXXXX";
+    public static final String ACCESS_KEY_SECRET = "XXXXXXXXXXXXXX";
 
     /**
      * alidns
@@ -94,4 +94,9 @@ public class Constants {
      * 每页的记录数
      */
     public static final Long PAGE_SIZE = 100L;
+
+    /**
+     * 查分二级域名的分隔符
+     */
+    public static final String SPLIT_REGEX = ",";
 }

@@ -103,11 +103,10 @@ public class DNSUtils {
             String currentHostIP = IPUtils.getCurrentHostIP();
             LOGGER.debug("-------------------------------当前主机公网IP为："+currentHostIP+"-------------------------------");
             for (DescribeDomainRecordsResponse.Record record : domainRecords){
-                //如果传入的二级域名前缀不为空，同时传入的二级域名前缀中包含当前记录的RR值，则跳过本次循环
+                //如果传入的二级域名前缀不为空，同时传入的二级域名前缀中不包含当前记录的RR值，则跳过本次循环
                 if (!ObjectUtils.isEmpty(rrList) && !rrList.contains(record.getRR())){
                     continue;
                 }
-                System.out.println(record.getRR());
                 // 记录ID
                 String recordId = record.getRecordId();
                 // 记录值
