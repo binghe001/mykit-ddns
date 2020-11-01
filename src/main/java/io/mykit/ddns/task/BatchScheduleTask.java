@@ -19,7 +19,6 @@ import io.mykit.ddns.bean.DomainInfo;
 import io.mykit.ddns.utils.common.ObjectUtils;
 import io.mykit.ddns.utils.ddns.DNSUtils;
 
-import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -38,9 +37,11 @@ public class BatchScheduleTask implements Runnable {
     @Override
     public void run() {
         if (!ObjectUtils.isEmpty(domainInfoList)){
-            for (DomainInfo domainInfo : domainInfoList){
-                DNSUtils.updateDomainIP(domainInfo.getTopDomain(), domainInfo.getChildDomainPrefix());
-            }
+            domainInfoList.stream().forEach((di) -> {
+                new Thread(() -> {
+                    DNSUtils.updateDomainIP(di.getTopDomain(), di.getChildDomainPrefix());
+                }).start();
+            });
         }
     }
 }

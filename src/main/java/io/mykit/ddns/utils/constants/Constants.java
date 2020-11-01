@@ -25,11 +25,11 @@ public class Constants {
     /**
      * 阿里云ACCESS_KEY_ID
      */
-    public static final String ACCESS_KEY_ID = "XXXXXXXXX";
+    public static final String ACCESS_KEY_ID = "xxxxxx";
     /**
      * 阿里云ACCESS_KEY_SECRET
      */
-    public static final String ACCESS_KEY_SECRET = "XXXXXXXXXXXXXX";
+    public static final String ACCESS_KEY_SECRET = "xxxxxx";
 
     /**
      * alidns
