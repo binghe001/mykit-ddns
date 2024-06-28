@@ -43,25 +43,8 @@
 
 添加微信：[hacker_binghe](https://binghe.gitcode.host/images/personal/hacker_binghe.jpg) - 备注来意
 
-# 项目简介
-实现域名绑定动态IP  
-参考链接：[实现动态域名解析DDNS](https://help.aliyun.com/document_detail/141482.html)
-
-# 项目配置
-项目中的核心配置文件为`src/resources/domains.properties`文件，在运行项目前，需要编辑此文件，内容格式为
-`顶级域名=二级域名的前缀（多个二级域名的前缀以逗号分隔）`，例如：  
-```
-xxx.com=test1,test2
-```
-
-# 项目使用
-### 打包项目
-```
-mvn package -Dmaven.test.skip=true 
-```
-### 运行项目
-```
-nohup java -jar mykit-ddns.jar /home/domains.properties >> /dev/null &
+## 关于本仓库
+📚 本仓库是作者冰河多年从事互联网开发、架构的学习历程技术汇总，旨在为大家提供一个清晰详细的学习教程，侧重点更倾向编写Java核心内容、底层原理、架构知识、渗透技术。如果本仓库能为您提供帮助，请给予支持(关注、点赞、分享)！
 
 
 <div align="center">
@@ -307,8 +290,9 @@ nohup java -jar mykit-ddns.jar /home/domains.properties >> /dev/null &
 
 ### 💥 分布式高性能网关
 
-* [《高性能Polaris网关》开篇：我要手把手教你搭建并研发一套抗瞬时百万流量的高性能网关项目](https://articles.zsxq.com/id_ridvweanvdw7.html)
-* [《高性能Polaris网关》需求设计-第01节：为何要学习高性能Polaris网关](https://articles.zsxq.com/id_vfi1o6or2zav.html)
+* [《高性能Polaris网关》开篇：我要手把手教你搭建并研发一套抗瞬时百万流量的高性能网关项目](https://t.zsxq.com/h7vdS)
+* [《高性能Polaris网关》需求设计-第01节：为何要学习高性能Polaris网关](https://t.zsxq.com/Hrnec)
+* [《高性能Polaris网关》需求设计-第02节：高性能Polaris网关的目标与挑战](https://t.zsxq.com/5kNlg)
 
 ### 💥 分布式IM即时通讯系统
 
@@ -386,35 +370,35 @@ nohup java -jar mykit-ddns.jar /home/domains.properties >> /dev/null &
 * [《分布式IM系统》大前端UI-基础架构-第02节-通用基础功能设计与研发](https://t.zsxq.com/17SQaWzqH)
 * [《分布式IM系统》大前端UI-用户模块-第01节-注册与登录流程的设计与实现](https://t.zsxq.com/17UBl1WVE)
 * [《分布式IM系统》大前端UI-用户模块-第02节-页面主体框架设计与实现](https://t.zsxq.com/170qiQYpk)
-* [《分布式IM系统》大前端UI-好友模块-第01节-好友主体页面的设计与实现](https://articles.zsxq.com/id_7ldopdr3gh2h.html)
-* [《分布式IM系统》大前端UI-好友模块-第02节-好友关联单聊页面的设计与实现](https://articles.zsxq.com/id_kc5wlze6we1u.html)
-* [《分布式IM系统》大前端UI-群组模块-第01节-群组主体页面的设计与实现](https://articles.zsxq.com/id_093aa985rwli.html)
-* [《分布式IM系统》大前端UI-群组模块-第02节-创建群组流程的设计与实现](https://articles.zsxq.com/id_9cwq08ppbqc6.html)
-* [《分布式IM系统》大前端UI-群组模块-第03节-修改群组流程的设计与实现](https://articles.zsxq.com/id_lh3d25rfs7ng.html)
-* [《分布式IM系统》大前端UI-群组模块-第04节-邀请好友进群流程的设计与实现](https://articles.zsxq.com/id_54ebenlz6i7j.html)
-* [《分布式IM系统》大前端UI-群组模块-第05节-群主踢人出群流程的设计与实现](https://articles.zsxq.com/id_er67wwd6mnf8.html)
-* [《分布式IM系统》大前端UI-群组模块-第06节-成员退出群组流程的设计与实现](https://articles.zsxq.com/id_1dl4jwp25elo.html)
-* [《分布式IM系统》大前端UI-群组模块-第07节-群主解散群组流程的设计与实现](https://articles.zsxq.com/id_cswvspibgag8.html)
-* [《分布式IM系统》大前端UI-群组模块-第08节-发送群聊消息流程的设计与实现](https://articles.zsxq.com/id_00u6ccq3maw1.html)
-* [《分布式IM系统》大前端UI-消息模块-第01节-发送文字消息流程的设计与实现](https://articles.zsxq.com/id_xabtrco5tij3.html)
-* [《分布式IM系统》大前端UI-消息模块-第02节-发送表情消息流程的设计与实现](https://articles.zsxq.com/id_2dc4f8qcgo4x.html)
-* [《分布式IM系统》大前端UI-消息模块-第03节-发送图片消息流程的设计与实现](https://articles.zsxq.com/id_6gccwan80pm4.html)
-* [《分布式IM系统》大前端UI-消息模块-第04节-发送文件消息流程的设计与实现](https://articles.zsxq.com/id_ux0w5786c430.html)
-* [《分布式IM系统》大前端UI-消息模块-第05节-发送语音消息流程的设计与实现](https://articles.zsxq.com/id_socqle6c9ui8.html)
-* [《分布式IM系统》大前端UI-消息模块-第06节-双向视频通话流程的设计与实现](https://articles.zsxq.com/id_4sfr98klz2o6.html)
-* [《分布式IM系统》大前端UI-消息模块-第07节-查看历史消息流程的设计与实现](https://articles.zsxq.com/id_1frrk063wm5h.html)
-* [《分布式IM系统》大前端UI-消息模块-第08节-消息已读未读流程的设计与实现](https://articles.zsxq.com/id_vh74whpq0scv.html)
-* [《分布式IM系统》大前端UI-消息模块-第09节-实时消息删除流程的设计与实现](https://articles.zsxq.com/id_phnb727lkgb6.html)
-* [《分布式IM系统》大前端UI-消息模块-第10节-实时消息撤回流程的设计与实现](https://articles.zsxq.com/id_agdci8u1lhxw.html)
-* [《分布式IM系统》大前端UI-消息模块-第11节-群聊@功能流程的设计与实现](https://articles.zsxq.com/id_0kt3fwcs2ibu.html)
-* [《分布式IM系统》OpenAI接入服务-第01节-OpenAI总体对接流程架构设计](https://articles.zsxq.com/id_78ui36m0ex1q.html)
-* [《分布式IM系统》OpenAI接入服务-第02节-OpenAI接入服务总体框架设计](https://articles.zsxq.com/id_e7ougupmqqc9.html)
-* [《分布式IM系统》OpenAI接入服务-第03节-OpenAI领域模型与核心接口设计](https://articles.zsxq.com/id_hnnwg51zqgz4.html)
-* [《分布式IM系统》OpenAI接入服务-第04节-OpenAI大模型对接设计和实现](https://articles.zsxq.com/id_c9mo3wd9vvhp.html)
-* [《分布式IM系统》OpenAI接入服务-第05节-单聊消息对接OpenAI大模型](https://articles.zsxq.com/id_a16rs2w50gwc.html)
-* [《分布式IM系统》OpenAI接入服务-第06节-群聊消息对接OpenAI大模型](https://articles.zsxq.com/id_sd7uh33rw02n.html)
-* [《分布式IM系统》OpenAI接入服务-第07节-扩展实现对接多种OpenAI大模型](https://articles.zsxq.com/id_gbsbw2lg43bz.html)
-* [《分布式IM系统》总结-分布式IM即时通讯系统整体专栏总结](https://articles.zsxq.com/id_se6guql5xzri.html)
+* [《分布式IM系统》大前端UI-好友模块-第01节-好友主体页面的设计与实现](https://t.zsxq.com/7Vv4z)
+* [《分布式IM系统》大前端UI-好友模块-第02节-好友关联单聊页面的设计与实现](https://t.zsxq.com/BTeFK)
+* [《分布式IM系统》大前端UI-群组模块-第01节-群组主体页面的设计与实现](https://t.zsxq.com/m1Fbh)
+* [《分布式IM系统》大前端UI-群组模块-第02节-创建群组流程的设计与实现](https://t.zsxq.com/kSUhh)
+* [《分布式IM系统》大前端UI-群组模块-第03节-修改群组流程的设计与实现](https://t.zsxq.com/vsFBw)
+* [《分布式IM系统》大前端UI-群组模块-第04节-邀请好友进群流程的设计与实现](https://t.zsxq.com/qwTHg)
+* [《分布式IM系统》大前端UI-群组模块-第05节-群主踢人出群流程的设计与实现](https://t.zsxq.com/cTlUF)
+* [《分布式IM系统》大前端UI-群组模块-第06节-成员退出群组流程的设计与实现](https://t.zsxq.com/WsClX)
+* [《分布式IM系统》大前端UI-群组模块-第07节-群主解散群组流程的设计与实现](https://t.zsxq.com/03JV9)
+* [《分布式IM系统》大前端UI-群组模块-第08节-发送群聊消息流程的设计与实现](https://t.zsxq.com/srTSs)
+* [《分布式IM系统》大前端UI-消息模块-第01节-发送文字消息流程的设计与实现](https://t.zsxq.com/f5u4h)
+* [《分布式IM系统》大前端UI-消息模块-第02节-发送表情消息流程的设计与实现](https://t.zsxq.com/yYzqC)
+* [《分布式IM系统》大前端UI-消息模块-第03节-发送图片消息流程的设计与实现](https://t.zsxq.com/8hJhy)
+* [《分布式IM系统》大前端UI-消息模块-第04节-发送文件消息流程的设计与实现](https://t.zsxq.com/DPRTH)
+* [《分布式IM系统》大前端UI-消息模块-第05节-发送语音消息流程的设计与实现](https://t.zsxq.com/RZvE6)
+* [《分布式IM系统》大前端UI-消息模块-第06节-双向视频通话流程的设计与实现](https://t.zsxq.com/zUaUw)
+* [《分布式IM系统》大前端UI-消息模块-第07节-查看历史消息流程的设计与实现](https://t.zsxq.com/wDvqp)
+* [《分布式IM系统》大前端UI-消息模块-第08节-消息已读未读流程的设计与实现](https://t.zsxq.com/77HZg)
+* [《分布式IM系统》大前端UI-消息模块-第09节-实时消息删除流程的设计与实现](https://t.zsxq.com/bhCwz)
+* [《分布式IM系统》大前端UI-消息模块-第10节-实时消息撤回流程的设计与实现](https://t.zsxq.com/mAoaz)
+* [《分布式IM系统》大前端UI-消息模块-第11节-群聊@功能流程的设计与实现](https://t.zsxq.com/1UWlE)
+* [《分布式IM系统》OpenAI接入服务-第01节-OpenAI总体对接流程架构设计](https://t.zsxq.com/aFuV1)
+* [《分布式IM系统》OpenAI接入服务-第02节-OpenAI接入服务总体框架设计](https://t.zsxq.com/ZibIi)
+* [《分布式IM系统》OpenAI接入服务-第03节-OpenAI领域模型与核心接口设计](https://t.zsxq.com/et4yg)
+* [《分布式IM系统》OpenAI接入服务-第04节-OpenAI大模型对接设计和实现](https://t.zsxq.com/y28nP)
+* [《分布式IM系统》OpenAI接入服务-第05节-单聊消息对接OpenAI大模型](https://t.zsxq.com/QIZGa)
+* [《分布式IM系统》OpenAI接入服务-第06节-群聊消息对接OpenAI大模型](https://t.zsxq.com/oZWqK)
+* [《分布式IM系统》OpenAI接入服务-第07节-扩展实现对接多种OpenAI大模型](https://t.zsxq.com/pvNwp)
+* [《分布式IM系统》总结-分布式IM即时通讯系统整体专栏总结](https://t.zsxq.com/wkNmx)
 * [这套分布式IM即时通讯系统如何写到简历上？我给你整理好了！](https://mp.weixin.qq.com/s/4CYsL_OZip3g0LYfvOmFQA)
 * [互联网工程实践：这套分布式IM即时通讯系统，是如何做到弹性扩缩容的？](https://mp.weixin.qq.com/s/TBAGVM8WxOZgCexJyfrB5Q)
 * [四个多月，IM系统，20+篇章，103+文章和视频，八大项目工程，103+源码分支，完美收官](https://mp.weixin.qq.com/s/i09JzlSsYmGQlXvbSFjCbA)
